@@ -31,10 +31,10 @@ const Carousel = () => {
         ))}
       </div>
       <a className="carousel-control-prev" onClick={handlePrev}>
-        &lt;
+        <img src="/prev_arrow_icon.svg" alt="previous" />
       </a>
       <a className="carousel-control-next" onClick={handleNext}>
-        &gt;
+      <img src="/next_arrow_icon.svg" alt="next" />
       </a>
     </div>
   );
