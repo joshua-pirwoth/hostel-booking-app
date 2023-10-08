@@ -1,9 +1,10 @@
 .navbar{
-    height: 10vh;
-    background:lightcyan;
+    height: 15vh;
+    background:rgb(251, 251, 251);
     display: flex;
-    justify-content: center;
+    justify-content:space-between;
     align-items: center;
+
 }
 .navbar-logo{
     color:black;
@@ -41,4 +42,59 @@
   
   .nav-item a:hover {
     background: rgb(0, 212, 212);
+  }
+  .flex{
+    display: flex;
+    
+  }
+
+  .box-container {
+    display: flex;
+    align-items: center;
+    width: 95%;
+    max-width: 300px; 
+    /* Adjust the maximum width as needed */
+    margin: 0 auto;
+     /* Center the search bar horizontally */
+    background-color: #ffffff; 
+    /* Background color for the search bar */
+    border: 1px solid #ccc; 
+    /* Border around the search bar */
+    border-radius: 20px; 
+    /* Rounded corners */
+    padding: 6px; 
+    /* Padding inside the search bar container */
+  }
+  
+  .profile-container {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    max-width: 75px; 
+    /* Adjust the maximum width as needed */
+    margin: 0 auto;
+     /* Center the search bar horizontally */
+    background-color: #ffffff; 
+    /* Background color for the search bar */
+    border: 1px solid #ccc; 
+    /* Border around the search bar */
+    border-radius: 20px; 
+    /* Rounded corners */
+    padding: 8px; 
+    /* Padding inside the search bar container */
+  }
+
+  /* Search input field */
+  .search-input {
+    flex: 1; /* Take up remaining space in the container */
+    border: none; /* Remove input border */
+    outline: none; /* Remove input outline */
+    padding: 6px; /* Padding inside the input field */
+    font-size: 16px; /* Font size for text */
+  }
+
+  .search-item {
+    border-right: 5px solid gray; /* Add a right border between items */
+    padding-right: 8px; /* Add some spacing between items */
+    margin-right: 8px; /* Add margin to separate items */
   }
