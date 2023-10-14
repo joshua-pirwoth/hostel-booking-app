@@ -1,3 +1,7 @@
+*{
+  justify-content: center;
+  margin-left: auto;
+}
 .navbar{
     height: 15vh;
     background:rgb(251, 251, 251);
@@ -45,6 +49,7 @@
   }
   .flex{
     display: flex;
+    justify-content: center;
     
   }
 
@@ -60,7 +65,7 @@
     /* Background color for the search bar */
     border: 1px solid #ccc; 
     /* Border around the search bar */
-    border-radius: 20px; 
+    border-radius: 10px; 
     /* Rounded corners */
     padding: 6px; 
     /* Padding inside the search bar container */
@@ -70,7 +75,7 @@
     display: flex;
     align-items: center;
     width: 30%;
-    max-width: 75px; 
+    max-width: 50px; 
     /* Adjust the maximum width as needed */
     margin: 0 auto;
      /* Center the search bar horizontally */
@@ -80,7 +85,7 @@
     /* Border around the search bar */
     border-radius: 20px; 
     /* Rounded corners */
-    padding: 8px; 
+    padding: 20px; 
     /* Padding inside the search bar container */
   }
 
