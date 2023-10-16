@@ -1,66 +1,101 @@
-// import { Link } from "react-router-dom";
-// import { useState } from "react";
-// import axios from "axios";
 
-// export default function RegisterPage() {
-//   // Define and initialize state variables using the useState hook
-//   const [name, setName] = useState('');
-//   const [email, setEmail] = useState('');
-//   const [password, setPassword] = useState('');
+import React, { useState } from "react"
 
-//   // Define an asynchronous function to handle user registration
-//   async function registerUser(ev) {
-//     // Prevent the default form submission behavior
-//     ev.preventDefault();
+function signUp () {
+//   let [authMode, setAuthMode] = useState("signin")
 
-//     try {
-//       // Send a POST request to the "/register" endpoint with user data
-//       await axios.post('/register', {
-//         name,
-//         email,
-//         password,
-//       });
-
-//       // Display a success message if the registration is successful
-//       alert('Registration successful. Now you can log in');
-//     } catch (e) {
-//       // Display an error message if registration fails
-//       alert('Registration failed. Please try again later');
-//     }
+//   const changeAuthMode = () => {
+//     setAuthMode(authMode === "signin" ? "signup" : "signin")
 //   }
 
-//   // Render the component's JSX markup
-//   return (
-//     <div className="mt-4 grow flex items-center justify-around">
-//       <div className="mb-64">
-//         <h1 className="text-4xl text-center mb-4">Register</h1>
-//         <form className="max-w-md mx-auto" onSubmit={registerUser}>
-//           {/* Input fields for user registration */}
-//           <input type="text"
-//             placeholder="John Doe"
-//             value={name}
-//             onChange={ev => setName(ev.target.value)}
-//           />
-//           <input type="email"
-//             placeholder="your@email.com"
-//             value={email}
-//             onChange={ev => setEmail(ev.target.value)}
-//           />
-//           <input type="password"
-//             placeholder="password"
-//             value={password}
-//             onChange={ev => setPassword(ev.target.value)}
-//           />
+  if (authMode === "signin") {
+    return (
+    //   <div className="Auth-form-container">
+    //     <form className="Auth-form">
+    //       <div className="Auth-form-content">
+    //         <h3 className="Auth-form-title">Sign In</h3>
+    //         <div className="text-center">
+    //           Not registered yet?{" "}
+    //           <span className="link-primary" onClick={changeAuthMode}>
+    //             Sign Up
+    //           </span>
+    //         </div>
+    //         <div className="form-group mt-3">
+    //           <label>Email address</label>
+    //           <input
+    //             type="email"
+    //             className="form-control mt-1"
+    //             placeholder="Enter email"
+    //           />
+    //         </div>
+    //         <div className="form-group mt-3">
+    //           <label>Password</label>
+    //           <input
+    //             type="password"
+    //             className="form-control mt-1"
+    //             placeholder="Enter password"
+    //           />
+    //         </div>
+    //         <div className="d-grid gap-2 mt-3">
+    //           <button type="submit" className="btn btn-primary">
+    //             Submit
+    //           </button>
+    //         </div>
+    //         <p className="text-center mt-2">
+    //           Forgot <a href="#">password?</a>
+    //         </p>
+    //       </div>
+    //     </form>
+    //   </div>
+     )
+  }
 
-//           {/* Registration button */}
-//           <button className="primary">Register</button>
-
-//           {/* Link to the login page */}
-//           <div className="text-center py-2 text-gray-500">
-//             Already a member? <Link className="underline text-black" to={'/login'}>Login</Link>
-//           </div>
-//         </form>
-//       </div>
-//     </div>
-//   );
-// }
+  return (
+    // <div className="Auth-form-container">
+    //   <form className="Auth-form">
+    //     <div className="Auth-form-content">
+    //       <h3 className="Auth-form-title">Sign In</h3>
+    //       <div className="text-center">
+    //         Already registered?{" "}
+    //         <span className="link-primary" onClick={changeAuthMode}>
+    //           Sign In
+    //         </span>
+    //       </div>
+    //       <div className="form-group mt-3">
+    //         <label>Full Name</label>
+    //         <input
+    //           type="email"
+    //           className="form-control mt-1"
+    //           placeholder="e.g Jane Doe"
+    //         />
+    //       </div>
+    //       <div className="form-group mt-3">
+    //         <label>Email address</label>
+    //         <input
+    //           type="email"
+    //           className="form-control mt-1"
+    //           placeholder="Email Address"
+    //         />
+    //       </div>
+    //       <div className="form-group mt-3">
+    //         <label>Password</label>
+    //         <input
+    //           type="password"
+    //           className="form-control mt-1"
+    //           placeholder="Password"
+    //         />
+    //       </div>
+    //       <div className="d-grid gap-2 mt-3">
+    //         <button type="submit" className="btn btn-primary">
+    //           Submit
+    //         </button>
+    //       </div>
+    //       <p className="text-center mt-2">
+    //         Forgot <a href="#">password?</a>
+    //       </p>
+    //     </div>
+    //   </form>
+    // </div>
+  )
+}
+export default signUp;
