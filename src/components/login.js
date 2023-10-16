@@ -1,57 +1,124 @@
-import React, { Component } from "react";
 
-class login extends Component {
-  constructor() {
-    super();
-    this.state = {
-      username: "",
-      password: "",
-    };
-  }
+// import React, { Component } from 'react'
+// // import './auth.css'
 
-  handleInputChange = (e) => {
-    const { name, value } = e.target;
-    this.setState({
-      [name]: value,
-    });
-  }
+// class login extends Component {
+//     constructor(props) {
+//         super(props)
 
-  handleSubmit = (e) => {
-    e.preventDefault();
-    // Add your authentication logic here
-    // For a basic example, you can log the username and password to the console
-    console.log("Username:", this.state.username);
-    console.log("Password:", this.state.password);
-  }
+//         this.state = {
+//             firstName: "",
+//             lastName: "",
+//             password: "",
+//             gender: "",  
 
-  render() {
-    return (
-      <div>
-        <h2>Login</h2>
-        <form onSubmit={this.handleSubmit}>
-          <div>
-            <label>Username:</label>
+
+//         }
+//         this.handleSubmit=this.handleSubmit.bind(this)
+        
+//     }
+
+//     firsthandler = (event) => {
+//         this.setState({
+//             firstName: event.target.value
+//         })
+//     }
+//     lasthandler = (event) => {
+//         this.setState({
+//             lastName: event.target.value
+//         })
+//     }
+//     passwordhandler = (event) => {
+//         this.setState({
+//             password: event.target.value
+//         })
+//     }
+
+//     genderhandler = (event) => {
+//         this.setState({
+//             gender: event.target.value
+//         })
+//     }
+
+//     handleSubmit = (event) => {
+//         alert(`${this.state.firstName} ${this.state.lastName}  You Successfully logged-in`)
+//         console.log(this.state);
+//         this.setState({
+//             firstName: "",
+//             lastName: "",
+//             password: '',
+//             gender: "",
+//         })
+//      event.preventDefault()
+
+//     }
+    
+
+
+
+
+//     render() {
+//         return (
+//             <div id="login">
+
+//                 <form onSubmit={this.handleSubmit} >
+//                     <h1 className='new'> Question Answer Platform</h1>
+//                     <h1 className='old'>Already signed-in</h1>
+//                     <h4 className='context'>Login!</h4>
+//                     <label className='primary'>FirstName : </label> <input type="text" value={this.state.firstName} onChange={this.firsthandler} placeholder="FirstName..." /><br /><br />
+//                     <label className='secondary'>LastName : </label> <input type="text" value={this.state.lastName} onChange={this.lasthandler} placeholder="LastName..." /><br /><br />
+//                     <label className='third'>Password : </label> <input type="password" value={this.state.password} onChange={this.passwordhandler} placeholder="Password..." /><br /><br />
+                    
+//                     <input type="submit" value="Login" />
+                    
+//                 </form>
+            
+
+//             </div>
+
+//         )
+//     }
+// }
+
+
+// export default login
+
+import React from "react"
+import './style.css'
+
+ function Auth () {
+  return (
+    <div className="Auth-form-container">
+      <form className="Auth-form">
+        <div className="Auth-form-content">
+          <h3 className="Auth-form-title">Sign In</h3>
+          <div className="form-group mt-3">
+            <label>Email address</label>
             <input
-              type="text"
-              name="username"
-              value={this.state.username}
-              onChange={this.handleInputChange}
+              type="email"
+              className="form-control mt-1"
+              placeholder="Enter email"
             />
           </div>
-          <div>
-            <label>Password:</label>
+          <div className="form-group mt-3">
+            <label>Password</label>
             <input
               type="password"
-              name="password"
-              value={this.state.password}
-              onChange={this.handleInputChange}
+              className="form-control mt-1"
+              placeholder="Enter password"
             />
           </div>
-          <button type="submit">Login</button>
-        </form>
-      </div>
-    );
-  }
+          <div className="d-grid gap-2 mt-3">
+            <button type="submit" className="btn btn-primary">
+              Submit
+            </button>
+          </div>
+          <p className="forgot-password text-right mt-2">
+            Forgot <a href="#">password?</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  )
 }
-
-export default login;
+export default Auth;

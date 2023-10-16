@@ -4,7 +4,7 @@
 }
 .navbar{
     height: 15vh;
-    background:rgb(251, 251, 251);
+    background:rgb(255, 255, 255);
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -103,3 +103,25 @@
     padding-right: 8px; /* Add some spacing between items */
     margin-right: 8px; /* Add margin to separate items */
   }
+
+  h5{
+    margin-left: 0%;
+    margin-right: 80%;
+  }
+
+  /* Profile style below
+  .prof{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 800px;
+    margin:0 auto ;
+  }
+  .card{
+    width: 300%;
+    padding: 20%;
+    border: 1px solid black;
+ 
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0.1);
+  } */

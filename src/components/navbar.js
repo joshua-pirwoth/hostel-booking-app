@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Link} from "react-router-dom";
-import "./navbar.css";
+import "./style.css";
 
 // import Button from "./button"; // Import the Button component
 // import Dropdown from "./dropdown"; // Import the Dropdown component
@@ -20,7 +20,7 @@ function Navbar() {
         {
         /* Logo link */}
        
-        <Link to="/" className="navbar-logo">
+        <Link to="/auth" className="navbar-logo">
           HostelHub
         </Link>
       
@@ -32,7 +32,7 @@ function Navbar() {
       <div className="profile-container flex">
 
       </div>
-        
+        <hr/>
       </nav>
     </>
   );
