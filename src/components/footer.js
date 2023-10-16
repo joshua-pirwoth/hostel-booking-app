@@ -7,16 +7,16 @@ function Footer() {
   
 
   return (
-    // <>
-    //   {
-    //   /* Navigation bar */
-    //   }
-    //   <footer>
-    //     <hr/>
-    //   <h5>&copy; HostelHub,Inc. Terms. Policy</h5>
-    //   </footer>
+    <>
+      {
+      /* Navigation bar */
+      }
+      <footer>
+        <hr/>
+      <h5>&copy; HostelHub,Inc. Terms. Policy</h5>
+      </footer>
    
-    // </>
+    </>
   );
 }
 
