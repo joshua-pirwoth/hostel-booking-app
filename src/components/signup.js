@@ -2,11 +2,11 @@
 import React, { useState } from "react"
 
 function signUp () {
-//   let [authMode, setAuthMode] = useState("signin")
+  let [authMode, setAuthMode] = useState("signin")
 
-//   const changeAuthMode = () => {
-//     setAuthMode(authMode === "signin" ? "signup" : "signin")
-//   }
+  const changeAuthMode = () => {
+    setAuthMode(authMode === "signin" ? "signup" : "signin")
+  }
 
   if (authMode === "signin") {
     return (

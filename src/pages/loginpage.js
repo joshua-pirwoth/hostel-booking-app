@@ -5,11 +5,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 function loginPage(){
     return(
+     <Navbar/>
      
-        <BrowserRouter>
-        <Routes>
-           <Route path='/auth' element={<loginPage/>}/>
-        </Routes>
-        </BrowserRouter>
+       
     )
 }
