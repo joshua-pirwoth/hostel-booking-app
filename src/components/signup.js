@@ -1,13 +1,15 @@
-
+// Import React and the useState hook from the React library
 import React, { useState } from "react"
-
+// Define a functional component called 'signUp'
 function signUp () {
+    // Initialize a state variable 'authMode' with an initial value of "signin"
   let [authMode, setAuthMode] = useState("signin")
-
+// Define a function to toggle between "signin" and "signup" modes
   const changeAuthMode = () => {
     setAuthMode(authMode === "signin" ? "signup" : "signin")
   }
 
+  // Render the sign-in form if 'authMode' is "signin"
   if (authMode === "signin") {
     return (
       <div className="Auth-form-container">
@@ -49,7 +51,7 @@ function signUp () {
       </div>
      )
   }
-
+  // Render the sign-up form if 'authMode' is "signup"
   return (
     <div className="Auth-form-container">
       <form className="Auth-form">

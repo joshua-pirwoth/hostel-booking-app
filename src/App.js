@@ -16,7 +16,6 @@ function App() {
     <BrowserRouter>
     <Routes>
       <Route path="/auth" element={<Auth />} />
-      <Route path="/signup" element={<Sign />} />
       <Route path="/profile" element={<userProfile />} />
 
     </Routes>
