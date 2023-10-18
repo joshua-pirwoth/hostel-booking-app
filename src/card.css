@@ -5,21 +5,29 @@
   color: #333;
 }
 
-.card {
-  width: 316px;
-  height: 400px;
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
-  align-items: center;
-  margin: 16px 20px;
+.container.row.col {
+  padding: 0;
 }
-.card-body {
-  height: 86px;
+
+.hostel-details {
+  font-size: 16px;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
   text-align: left;
+}
+.name-and-rating {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.hostel-details p {
+  margin-bottom: 4px;
+}
+.name-and-rating p {
+  font-weight: bold;
 }
 
 
@@ -43,15 +51,4 @@
   width: 100%;
   height: auto;
   border-radius: 20px;
-}
-
-/* card text styles */
-.card-body {
-  width: 100%;
-  padding: 8px 0 0;
-}
-.card-title.h5,
-.card-text p {
-  margin: 0 0 4px;
-  font-size: 16px;
 }

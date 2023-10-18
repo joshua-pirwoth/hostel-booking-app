@@ -1,37 +1,30 @@
 import React from 'react';
-import './card.css';
 import HostelCarousel from './HostelCarousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Card from 'react-bootstrap/Card';
+import { Container, Row, Col } from 'react-bootstrap';
+import HostelDetails from './HostelDetails';
 
 const HostelCard = () => {
-    
-    const hostelName = "Hostel Name";
-    const hostelLocation = "Location (e.g. Kikoni, Makerere)";
-    const availableRooms = 120;
-    /* const ratingIcon = "./assets/rating_icon.svg"; */
-    const rating = 4.5;
+  // styles
+  const conatinerStyles = { maxWidth: '310px', height: '400px', position: 'relative' };
+  const col1_styles = { width: '100%', height: '100%', maxWidth: '310px', maxHeight: '310px', overflow: 'hidden', position: 'absolute', padding: 0 };
+  const col2_styles = { width: '100%', height: '86px', position: 'absolute', bottom: '0', padding: 0 }
 
-    return ( 
-    <div className="conatiner">
-      <Card>
-      {/* Carousel */}
-      <HostelCarousel />
-      <Card.Body>
-        <Card.Title>
-          { hostelName }
-          {/* <div className='hostel-rating d-flex flex-column justify-content-space-between align-items-center' style={{width: '15%'}}>
-              <img src={ ratingIcon } alt="rating_icon" /> */}
-          { rating }
-            {/* </div> */} 
-        </Card.Title>
-        <Card.Text>
-            <p>{ hostelLocation }</p>
-            <p>{ availableRooms } rooms available</p>
-        </Card.Text>
-      </Card.Body>
-    </Card>
-    </div>
+    return (
+      <Container style={ conatinerStyles }>
+      <Row>
+        <Col style={ col1_styles }>
+          {/* Carousel */}
+          <HostelCarousel />
+        </Col>
+      </Row>
+      <Row>
+        <Col style={ col2_styles }>
+          {/* Details */}
+          <HostelDetails />
+        </Col>
+      </Row>
+    </Container>
      );
 }
  

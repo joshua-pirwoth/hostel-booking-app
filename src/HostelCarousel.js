@@ -12,7 +12,7 @@ function HostelCarousel() {
   };
 
   return (
-    <div>
+    <div className='hostel-carousel'>
       <Carousel fade>
         <Carousel.Item>
         <img className='d-block w-100' src={ image1 } alt="First Slide" />
