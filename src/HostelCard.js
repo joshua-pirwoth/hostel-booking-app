@@ -5,20 +5,20 @@ import HostelDetails from './HostelDetails';
 
 const HostelCard = () => {
   // styles
-  const conatinerStyles = { maxWidth: '288px', height: '378px', position: 'relative' };
-  const col1_styles = { width: '100%', height: '100%', maxWidth: '310px', maxHeight: '310px', overflow: 'hidden', position: 'absolute', padding: 0 };
-  const col2_styles = { width: '100%', height: '86px', position: 'absolute', bottom: '0', padding: 0 };
+  const conatinerStyles = { maxWidth: '288px', height: '378px' };
+  const col1_styles = { maxWidth: '288px', maxHeight: '288px'};
+  const col2_styles = { height: '86px' };
 
     return (
-      <div className="m-3 col-md-3" style={ conatinerStyles }>
+      <div className="m-3 col-md-3 position-relative" style={ conatinerStyles }>
         <div className='row'>
-            <div className='col' style={ col1_styles }>
+            <div className='col w-100 h-100 position-absolute p-0 overflow-hidden' style={ col1_styles }>
               {/* Carousel */}
               <HostelCarousel />
             </div>
         </div>
         <div className='row'>
-            <div className='col' style={ col2_styles }>
+            <div className='col w-100 position-absolute p-0 bottom-0' style={ col2_styles }>
               {/* Details */}
               <HostelDetails />
             </div>

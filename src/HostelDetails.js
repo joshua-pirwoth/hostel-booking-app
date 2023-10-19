@@ -7,7 +7,6 @@ const HostelDetails = () => {
     const hostelName = "Hostel Name";
     const hostelLocation = "Location (Kikoni, Makerere)";
     const availableRooms = 120;
-    /* const ratingIcon = "./assets/rating_icon.svg"; */
     const rating = 4.5;
 
     return ( 
@@ -19,8 +18,8 @@ const HostelDetails = () => {
                     { rating }
                 </div>
             </div>
-            <p>{ hostelLocation }</p>
-            <p>{ availableRooms } rooms available</p>
+            <p className='text-secondary'>{ hostelLocation }</p>
+            <p><span style={{fontWeight: 'bold'}}>{ availableRooms }</span>  rooms available</p>
         </div>
      );
 }
