@@ -1,8 +1,16 @@
 //import './Register.css';
 //import 'bootstrap/dist/css/bootstrap.min.css';
 
+import { useState } from "react";
+
 const Register = () => {
-    
+    const [formData,setFormData] = useState({
+        email:'',
+        password:'',
+        confirmPassword:''
+    });
+    const handleInputChange = (e)
+
     return ( 
         /*<div className='container'>
             <div className="header">
