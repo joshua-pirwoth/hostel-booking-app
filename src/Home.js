@@ -3,7 +3,14 @@ import HostelCard from "./HostelCard";
 
 const Home = () => {
     return ( 
-        <div className="home">
+        <div className="home row">
+            <HostelCard />
+            <HostelCard />
+            <HostelCard />
+            <HostelCard />
+            <HostelCard />
+            <HostelCard />
+            <HostelCard />
             <HostelCard />
         </div>
      );

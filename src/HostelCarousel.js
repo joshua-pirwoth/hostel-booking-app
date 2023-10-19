@@ -15,11 +15,11 @@ function HostelCarousel() {
 
   return (    
     <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
-      <ol className="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1" className="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2" className="active"></li>
-      </ol>
+        {/* <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol> */}
       <div className="carousel-inner">
         <div className="carousel-item active">
           <img src={ image1 } className="d-block w-100" alt="..."/>
