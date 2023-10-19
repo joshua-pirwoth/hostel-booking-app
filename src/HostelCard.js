@@ -1,7 +1,6 @@
 import React from 'react';
 import HostelCarousel from './HostelCarousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Row, Col } from 'react-bootstrap';
 import HostelDetails from './HostelDetails';
 
 const HostelCard = () => {
@@ -12,18 +11,18 @@ const HostelCard = () => {
 
     return (
       <div className="m-3 col-md-3" style={ conatinerStyles }>
-      <div className='row'>
-        <div className='col' style={ col1_styles }>
-          {/* Carousel */}
-          <HostelCarousel />
+        <div className='row'>
+            <div className='col' style={ col1_styles }>
+              {/* Carousel */}
+              <HostelCarousel />
+            </div>
         </div>
-      </div>
-      <div className='row'>
-        <div className='col' style={ col2_styles }>
-          {/* Details */}
-          <HostelDetails />
+        <div className='row'>
+            <div className='col' style={ col2_styles }>
+              {/* Details */}
+              <HostelDetails />
+            </div>
         </div>
-      </div>
     </div>
      );
 }
