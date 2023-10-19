@@ -15,29 +15,30 @@ function HostelCarousel() {
 
   return (    
     <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
-        {/* <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol> */}
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
       <div className="carousel-inner">
-        <div className="carousel-item active">
-          <img src={ image1 } className="d-block w-100" alt="..."/>
-        </div>
-        <div className="carousel-item">
-          <img src={ image2 } className="d-block w-100" alt="..."/>
-        </div>
-        <div className="carousel-item">
-          <img src={ image3 } className="d-block w-100" alt="..."/>
-        </div>
+          <div className="carousel-item active">
+              <img src={ image1 } className="d-block w-100" alt="..."/>
+          </div>
+          <div className="carousel-item">
+              <img src={ image2 } className="d-block w-100" alt="..."/>
+          </div>
+          <div className="carousel-item">
+              <img src={ image3 } className="d-block w-100" alt="..."/>
+          </div>
       </div>
+
       <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-        {/* <span className="sr-only">Previous</span> */}
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          {/* <span className="sr-only">Previous</span> */}
       </button>
       <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-        {/* <span className="sr-only">Next</span> */}
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          {/* <span className="sr-only">Next</span> */}
       </button>
     </div>
   );
