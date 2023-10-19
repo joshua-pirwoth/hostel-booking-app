@@ -2,6 +2,7 @@
 //import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Register = () => {
+    
     return ( 
         /*<div className='container'>
             <div className="header">
@@ -50,10 +51,10 @@ const Register = () => {
                 <input type ="email" placeholder ="email" className="form-control" name="email" value={FormData.email} onChange={handleInputChange} required />
             </div>
             <div className="mb-3">
-                <input type ="password" placeholder ="password" />
+                <input type ="password" placeholder ="password" className="form-control" name="password" value={FormData.password} onChange={handleInputChange} required />
             </div>
             <div className="form-control">
-                <input type ="password" placeholder ="Confirm password" />
+                <input type ="password" placeholder ="Confirm password" className="form-control" name="confirmPassword" value={FormData.confirmPassword} onChange={handleInputChange} required/>
             </div>
             <div>
                 <input type ="checkbox" name="Hostel Manager" />
