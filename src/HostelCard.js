@@ -6,7 +6,7 @@ import HostelDetails from './HostelDetails';
 
 const HostelCard = () => {
   // styles
-  const conatinerStyles = { maxWidth: '310px', height: '400px', position: 'relative' };
+  const conatinerStyles = { maxWidth: '288px', height: '378px', position: 'relative' };
   const col1_styles = { width: '100%', height: '100%', maxWidth: '310px', maxHeight: '310px', overflow: 'hidden', position: 'absolute', padding: 0 };
   const col2_styles = { width: '100%', height: '86px', position: 'absolute', bottom: '0', padding: 0 };
 
