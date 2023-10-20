@@ -1,8 +1,6 @@
-import './Register.css';
-//import 'bootstrap/dist/css/bootstrap.min.css';
 import google from "../assets/search.png"
-import { useState } from "react"
-// import Validation from "./Validation"
+import { useState, useEffect } from "react"
+import validateField from "../helperFunctions/ValidateField"
 
 const Register = () => {
     const [values, setValues] = useState({
@@ -12,22 +10,27 @@ const Register = () => {
         isHostelManager:false
        
     })
-    const [errors, setErrors] = useState({})
+    const [errors, setErrors] = useState({email:'',password:'',confirmPassword:''})
 
     const handleInputChange = (e) => {
-        setValues({...values, [e.target.name]: [e.target.value]})
-        //const { name, value, type,checked } =e.target;
-        //setFormData({...formData,[name]: type ==='checkbox'? checked :value,
-    
+        setValues({...values, [e.target.name]: [e.target.value]})    
     }
-    function handleValidation(e){
-        e.preventDefault()
-        // setErrors(Validation(values))
 
-    }
-    /*const handleSubmit = (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault();
-    };*/
+        if(errors.email || errors.password || errors.confirmPassword){
+            return
+        }
+        console.log(values)
+        setValues({
+            email:'',
+            password:'',
+            confirmPassword:'',
+            isHostelManager:false
+           
+        })
+
+    };
 
     
     return ( 
@@ -66,10 +69,10 @@ const Register = () => {
     <div className='container'>
         <div className='row justify-content-center px-5  d-flex vh-100 align-items-center'><div className='col-sm-8 col-md-7 col-lg-4 pb-3 rounded  shadow'>
         
-            <form onSubmit={handleValidation}>
+            <form onSubmit={handleSubmit}>
             
                 <div>
-                    <div className= "text-center pt-2 fs-5">Sign up</div>
+                    <div className= "text-center pt-2 fs-5 fw-bold">Sign up</div>
                     {/* <div className="underline"></div> */}
                     <hr />
                 </div>
@@ -78,23 +81,34 @@ const Register = () => {
                     <h5 className='ps-2 py-1'>Welcome to HostelHub</h5>
                 </div>
                 <div className='mb-3'>
-                   <input type ="email" placeholder ="email" className="form-control" name="email" onChange={handleInputChange} required />
+                   <input type ="email" placeholder ="email" value={values.email} className="form-control" name="email" onChange={handleInputChange} onBlur={()=>{
+                    setErrors({...errors, email:validateField(values, 'email')})
+
+                   }} required />
                    {errors.email && <p style={{color: "red"}}>{errors.email}</p>}
                 </div>
                 <div className="mb-3">
-                   <input type ="password" placeholder ="password" className="form-control" name="password" onChange={handleInputChange} required />
+                   <input type ="password" placeholder ="password" value={values.password} className="form-control" name="password" onChange={handleInputChange} onBlur={()=>{
+                    setErrors({...errors, password:validateField(values,'password')})
+
+                   }} required />
                    {errors.password && <p style={{color: "red"}}>{errors.password}</p>}
                 </div>
                 <div className="mb-3">
-                   <input type ="password" placeholder ="Confirm password" className="form-control" name="confirmPassword" onChange={handleInputChange} required/>
+                   <input type ="password" placeholder ="Confirm password" value={values.confirmPasswordgit} className="form-control" name="confirmPassword" onChange={handleInputChange} onBlur={()=>{
+                    setErrors({...errors, confirmPassword:validateField(values, 'confirmPassword')})
+
+                   }} required/>
                    {errors.confirmPassword && <p style={{color: "red"}}>{errors.confirmPassword}</p>}
                 </div>
                 <div className="form-check">
-                    <input className="form-check-input pe-3" type ="checkbox" checked={values.isHostelManager}   />
+                    <input className="form-check-input pe-3" type ="checkbox" checked={values.isHostelManager} onChange={()=>{
+                        setValues({...values,isHostelManager:!values.isHostelManager})
+                    }}  />
                    <label className='form-check-label'>Sign in as a hostel manager</label> 
                 </div>
                 <div className='pt-3'>
-                    <button type="submit" class="btn btn-primary w-100">Continue</button>
+                    <button type="submit" className="btn btn-primary w-100">Continue</button>
                 </div>    
                 <div className='container'>
                 <div className= "row">
