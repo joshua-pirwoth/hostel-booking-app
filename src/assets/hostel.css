@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Hostel */
+.hostel {
+    width: 288px;
+    height: 378px;
+    max-width: 288px;
+    max-height: 378px;
+    border: 1px solid black;
+}
+.hostel-image {
+    width: 288px;
+    height: 288px;
+    border: 1px solid gray;
+    background-position: center;
+    background-size: contain;
+}
