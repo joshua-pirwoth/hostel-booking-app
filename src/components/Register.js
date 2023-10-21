@@ -1,4 +1,4 @@
-
+    import google from "../assets/search.png"
 import { useState, useEffect } from "react"
 import validateField from "../helperFunctions/ValidateField"
 
@@ -73,7 +73,6 @@ const Register = () => {
             
                 <div>
                     <div className= "text-center pt-2 fs-5 fw-bold">Sign up</div>
-                    {/* <div className="underline"></div> */}
                     <hr />
                 </div>
             
@@ -119,7 +118,7 @@ const Register = () => {
                 </div>
                 </div>
                 <div>
-                    <button className="btn btn-outline-light text-secondary border w-100 rounded" style={{width:"100px"}}><div className='d-flex ps-2 pt-1 align-items-center'> <img className='img-fluid' style={{width:"20px", height:"20px"}} src={google} alt="google"/><span className='flex-grow-1'>Sign in with Google Account</span></div></button>
+                    <button className="btn btn-outline-light text-secondary border w-100 rounded" style={{width:"100px"}}><div className='d-flex ps-2 pt-1 align-items-center'> <img className='img-fluid' style={{width:"20px", height:"20px"}} src={google} alt="google"/><span className='flex-grow-1'>Continue with Google </span></div></button>
                 
                 </div>
 
