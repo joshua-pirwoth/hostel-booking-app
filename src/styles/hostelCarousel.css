@@ -14,6 +14,10 @@
     width: auto; /* for those images which don't have a width specified, but has a max-height will be auto adjusted */
   }
 
+  /* Additional styles for the hostel container */
+  .hostel-container {
+    margin: 16px 0px;
+  }
 
 
   
