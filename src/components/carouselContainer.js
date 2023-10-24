@@ -4,7 +4,7 @@ const CarouselContainer = () => {
   const [hostels, setHostels] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch("http://localhost:3001/hostels");
+      const response = await fetch("http://localhost:8000/hostels");
       const data = await response.json();
       setHostels(data);
     };
