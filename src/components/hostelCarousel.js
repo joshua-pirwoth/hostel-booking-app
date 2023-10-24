@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "../styles/hostelCarousel.css";
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
 const HostelCarousel = ({
   hostelId,
   hostelName,
