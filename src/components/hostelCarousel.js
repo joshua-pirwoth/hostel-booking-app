@@ -55,7 +55,7 @@ const HostelCarousel = ({
             style={{ display: activeImage === 0 ? "none" : "block" }}
           >
             <div
-              className="rounded-circle bg-light"
+              className="rounded-circle bg-light position-absolute end-0"
               style={{ width: "25px", height: "25px" }}
             >
               <i className="bi bi-chevron-left text-secondary fs-6"></i>

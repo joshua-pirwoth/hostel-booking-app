@@ -19,17 +19,6 @@
     margin: 16px 0px;
   }
 
-
-  
-  
-  
-  
-  
-  
-
-  
-  
-  
-  
-  
-  
+  button.carousel-control-prev div.rounded-circle {
+    transform: translateY(-55%);
+  }
