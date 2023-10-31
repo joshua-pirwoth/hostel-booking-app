@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import HostelCarousel from "./hostelCarousel";
+
 const CarouselContainer = () => {
   const [hostels, setHostels] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch("http://localhost:8000/hostels");
+      const response = await fetch("http://localhost:3001/hostels");
       const data = await response.json();
       setHostels(data);
     };
@@ -12,7 +13,7 @@ const CarouselContainer = () => {
   }, []);
   return (
     <div className="container">
-      <div className="row row-gap-5">
+      <div className="row row-gap-5 hostel-container">
         {hostels.map((hostel) => {
           return (
               <HostelCarousel
