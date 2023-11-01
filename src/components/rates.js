@@ -10,6 +10,12 @@ function Rates() {
         <div className="text-2xl text-center">
         Price: *** / per night
       </div>
+      <div className="border rounded-2xl mt-4">
+        <div className="flex">
+
+        </div>
+
+      </div>
 
       </div>
             
