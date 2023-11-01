@@ -12,7 +12,14 @@ function Rates() {
       </div>
       <div className="border rounded-2xl mt-4">
         <div className="flex">
-
+        <div className="py-3 px-4">
+            <label>Check in:</label>
+            <input type="date" value=""/>
+          </div>
+          <div className="py-3 px-4 border-l">
+            <label>Check out:</label>
+            <input type="date" value="" />
+          </div>
         </div>
 
       </div>
