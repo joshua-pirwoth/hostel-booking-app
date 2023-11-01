@@ -20,6 +20,21 @@ function Rates() {
             <label>Check out:</label>
             <input type="date" value="" />
           </div>
+          <div className="py-3 px-4 border-t">
+          <label>Number of guests:</label>
+          <input type="number"
+                 value=""/>
+        </div>
+        <div className="py-3 px-4 border-t">
+            <label>Your full name:</label>
+            <input type="text"
+                   value=""
+                   />
+            <label>Phone number:</label>
+            <input type="tel"
+                   value=""
+                  />
+          </div>
         </div>
 
       </div>
