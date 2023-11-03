@@ -163,3 +163,116 @@ label {
   font-weight: 600;
   color: rgb(34, 34, 34);
 }
+
+.alldetails{
+  justify-content: center;
+  margin-left:100px ;
+  margin-right: 90px;
+}
+.Hostel-name{
+  justify-content: center;
+ 
+}
+.Hostel-name h2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: normal;
+}
+.Hostel-name h3 {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: normal;
+}
+/* Like icon*/
+.imIcon{
+  transform: scale(0.04);
+}
+
+/*image component*/
+/* styles.css */
+.image-gallery {
+  display: flex;
+  align-items: center;
+}
+
+.left-image {
+  max-width: 100px;
+  height: auto;
+}
+
+.right-images {
+  flex: 4;
+  display: flex;
+  justify-content: space-between;
+}
+
+.right-images img {
+  max-width: 100px;
+  height: auto;
+}
+
+/*rooms available*/
+.rooms-available{
+
+
+}
+.rooms-available h3{
+  font-weight: normal;
+}
+.line{
+  margin-right: 50%;
+}
+
+/*table*/
+table{
+  font-family: 'Times New Roman', Times, serif;
+
+}
+table tr td{
+  row-gap: 20px;
+}
+
+.rate-container {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add shadow */
+  border: 1px solid #ccc; /* Add border */
+  padding: 10px;
+  text-align: center; /* Center-align the content */
+  width:300px;
+  border-radius: 15px;
+  /* Optional: Add some margin for better spacing */
+  margin: 20px;
+}
+
+.login-heading {
+  text-align: center; /* Center-align the heading */
+}
+
+/*book button*/
+.btn{
+  color: white;
+  background-color: darkturquoise;
+  padding: 5px;
+  width:100px;
+  height: 30px;
+  border-radius: 3px;
+}
+table{
+  margin: auto;
+}
+.table td {
+  padding-right: 20px; /* Adjust the value as needed for your desired spacing */
+}
+td{
+  column-span: 2;
+}
+
+.list{
+  display: inline;
+  font-size: small;
+}
+
+.list-custom{
+  margin:5px 0; ;
+}
+
+
+
+
