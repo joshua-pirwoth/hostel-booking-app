@@ -1,15 +1,22 @@
 import React from 'react';
 import './style.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 
 
 function HostelList(){
   return (
+
+
+
+
+
     <div className="container mt-4">
-    <h1 className="display-6">What this hostel offers.</h1>
-    <div className="container">
-      <div className="row mb-0">
+    <h4 className="display-6">What this hostel offers.</h4>
+    <div className="container mt-10">
+      <div className="row mb-10">
         <div className="col-12 col-sm-6 p-0 mb-0">
           <ul className="list-unstyled list-group-custom">
             <li className='list-custom'>Free WiFi</li>
@@ -19,13 +26,15 @@ function HostelList(){
         </div>
         <div className="col-12 col-sm-6 p-0 mb-0">
           <ul className="list-unstyled list-group-custom">
-            <li className='list-custom'>Transport to campus</li>
+            <li className='list-custom'> Transport to campus</li>
             <li className='list-custom'>Transport to campus</li>
             <li className='list-custom'>DsTv</li>
-            {/* <li className='list-custom'>Another List Item 3</li> */}
+            
           </ul>
         </div>
+        
       </div>
+      <button className='border p-2 flex rounded-2 cursor-pointer rounded-full py-2 px-4'>Show more amenities</button>
     </div>
 
     
