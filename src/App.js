@@ -8,8 +8,9 @@ import Footer from './components/footer'
 // import Login from './components/loginpage'
 import React from 'react'
 import HostelName from './components/hostel';
-import HostelList from './components/offers';
+import Amenities from './components/offers';
 import Rates from './components/rates';
+
 
 // import Profile from './components/profile';
 // import loginPage from './components/loginpage';
@@ -19,8 +20,9 @@ function App() {
     <BrowserRouter>
    <Navbar />
    {/* <HostelName/> */}
-   {/* <HostelList/> */}
-<Rates/>
+   <Amenities/>
+{/* <Rates/> */}
+
    <Footer/>
   </BrowserRouter>
   

@@ -1,17 +1,14 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 
 
-import Button from 'react-bootstrap/Button';
+
 
 function Rates() {
     return (
       
           
              
-              <div className="bg-white shadow p-4 rounded-2xl">
+              <div className="bg-white shadow p-4 rounded-2xl w-30 ">
    
       <div className="text-2xl text-center">
       <h4>Check-in</h4>
@@ -24,7 +21,7 @@ function Rates() {
             <input type="date" value=""/>
           </div>
           <br/>
-          <div className="py-3 px-4 border-l">
+          {/* <div className="py-3 px-4 border-l">
             <label>Check out:</label>
             <input type="date" value="" />
           </div>
@@ -42,7 +39,7 @@ function Rates() {
             <input type="tel"
                    value=""
                   />
-          </div>
+          </div> */}
 
 
         </div>  
