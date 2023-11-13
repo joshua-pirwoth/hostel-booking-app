@@ -70,12 +70,29 @@
     padding: 6px; 
     /* Padding inside the search bar container */
   }
+  .acc-container {
+    display: flex;
+    /* align-items: center; */
+    width: 50%;
+    max-width: 60px; 
+    /* Adjust the maximum width as needed */
+    margin: 0 auto;
+     /* Center the search bar horizontally */
+    background-color: #ffffff; 
+    /* Background color for the search bar */
+    border: 1px solid #ccc; 
+    /* Border around the search bar */
+    border-radius: 15px; 
+    /* Rounded corners */
+    padding: 10px; 
+    /* Padding inside the search bar container */
+  }
   
   .profile-container {
     display: flex;
     align-items: center;
     width: 30%;
-    max-width: 50px; 
+    max-width: 100px; 
     /* Adjust the maximum width as needed */
     margin: 0 auto;
      /* Center the search bar horizontally */
