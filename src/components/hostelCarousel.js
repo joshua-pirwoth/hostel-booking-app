@@ -37,7 +37,7 @@ const HostelCarousel = ({
               <div key={index} className={classname} >
                 <img
                   src={image}
-                  className="rounded-3 img-fluid"
+                  className="rounded-3 img-fluid carousel-img"
                   alt="hostel image"
                 />
               </div>
